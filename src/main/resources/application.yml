@@ -22,17 +22,17 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  
-  # Logging Configuration
-  logging:
-    level:
-      root: INFO
-      com.miempresa.api_tienda: DEBUG
-      org.hibernate.SQL: DEBUG
-      org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-    pattern:
-      console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
-      file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+# Logging Configuration
+logging:
+  level:
+    root: INFO
+    com.miempresa.api_tienda: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
 
 # Swagger/OpenAPI Configuration
 springdoc:
